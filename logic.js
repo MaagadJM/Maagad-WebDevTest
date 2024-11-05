@@ -56,15 +56,15 @@ users.forEach((user, index) => {
     userElement.querySelector(".user-card").classList.add("rotate-right");
   }
   // ===============
-  const closeButton = userElement.querySelector(".btn-close");
-  closeButton.addEventListener("click", () => {
-    closeButton.closest(".user-card").style.display = "none";
-  });
+    const closeButton = userElement.querySelector(".btn-close");
+    // closeButton.addEventListener("click", () => {
+    //   closeButton.closest(".user-card").style.display = "none";
+    // });
+    closeButton.addEventListener('click', () => {
+        closeButton.closest('.user-card').classList.add('hidden');
+      });
 
-  //   const closeButton = userElement.querySelector(".btn-close");
-  //   closeButton.addEventListener("click", () => {
-  //     closeButton.closest(".user-card").classList.add("hidden");
-  //   });
+ 
   // ==============
   usersContainer.appendChild(userElement);
 });
