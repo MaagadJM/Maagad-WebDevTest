@@ -4,22 +4,32 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Maagad-Web-Dev-Test</title>
+
+    <link rel="stylesheet" href="designs.css" />
   </head>
   <body>
     <div class="users-container"></div>
 
     <template id="user-template">
       <div class="user-container">
-        <img src="" alt="User Image" class="user-image" />
-        <div class="user-details">
-          <h2 class="user-name">Name</h2>
-          <p class="user-email">Email</p>
-          <p class="user-age">Age</p>
-          <p class="user-info">info</p>
+        
+        <div class="user-card">
+          <a class="btn-close"
+            ><img src="assets/icons/close.png" alt="" width="50px" height="50px"/>
+          </a>
+          <img src="" alt="User Image" class="user-image" />
+          <div class="user-details">
+            <h2 class="user-name">Name</h2>
+            <p class="user-email">Email</p>
+            <p class="user-age">Age</p>
+            <p class="user-info">info</p>
+          </div>
         </div>
 
-        <a class="btn-close"></a>
+        <!-- <a class="btn-close"></a> -->
       </div>
     </template>
+
+    <script src="logic.js"></script>
   </body>
 </html>
