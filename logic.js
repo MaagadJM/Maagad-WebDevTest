@@ -3,7 +3,7 @@ const users = [
   {
     imageUrl: "assets/images/Panda.png",
     name: "John Doe",
-    email: "johndoe@example.com",
+    // email: "johndoe@example.com",
     age: "28 years old",
     info: "A passionate wildlife enthusiast and photographer, often found exploring nature.",
     // ImageUrl: "/Panda.png"
