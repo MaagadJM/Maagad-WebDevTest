@@ -39,12 +39,32 @@ const users = [
 const userTemplate = document.getElementById("user-template").content;
 const usersContainer = document.querySelector(".users-container");
 
-users.forEach((user) => {
+users.forEach((user, index) => {
   const userElement = userTemplate.cloneNode(true);
+  //   ======================
+
+  // =========================
   userElement.querySelector(".user-image").src = user.imageUrl; // Replace with actual image URL
   userElement.querySelector(".user-name").textContent = user.name;
   userElement.querySelector(".user-email").textContent = user.email;
   userElement.querySelector(".user-age").textContent = user.age;
   userElement.querySelector(".user-info").textContent = user.info;
+
+  if (index === 0) {
+    userElement.querySelector(".user-card").classList.add("first-card");
+  } else if (index % 2 === 1) {
+    userElement.querySelector(".user-card").classList.add("rotate-right");
+  }
+  // ===============
+  const closeButton = userElement.querySelector(".btn-close");
+  closeButton.addEventListener("click", () => {
+    closeButton.closest(".user-card").style.display = "none";
+  });
+
+  //   const closeButton = userElement.querySelector(".btn-close");
+  //   closeButton.addEventListener("click", () => {
+  //     closeButton.closest(".user-card").classList.add("hidden");
+  //   });
+  // ==============
   usersContainer.appendChild(userElement);
 });

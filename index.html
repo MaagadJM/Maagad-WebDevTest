@@ -15,15 +15,18 @@
     <template id="user-template">
       <div class="user-container">
         <div class="user-card">
+          <a id="card-close-btn" class="btn-close">
+            <img src="assets/icons/close.png" width="50px" height="50px" />
+          </a>
           <div class="user-details">
-            <a class="btn-close"
-              ><img
+            <!-- <a id="card-close-btn" class="btn-close">
+              <img
                 src="assets/icons/close.png"
                 alt=""
                 width="50px"
                 height="50px"
               />
-            </a>
+            </a> -->
             <img src="" alt="User Image" class="user-image" />
             <h2 class="user-name">Name</h2>
             <p class="user-email">Email</p>
@@ -31,8 +34,6 @@
             <p class="user-info">info</p>
           </div>
         </div>
-
-        <!-- <a class="btn-close"></a> -->
       </div>
     </template>
 
