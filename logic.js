@@ -50,9 +50,17 @@ users.forEach((user, index) => {
   userElement.querySelector(".user-age").textContent = user.age;
   userElement.querySelector(".user-info").textContent = user.info;
 
+  // if (index === 0) {
+  //   userElement.querySelector(".user-card").classList.add("first-card");
+  // } else if (index % 2 === 1) {
+  //   userElement.querySelector(".user-card").classList.add("rotate-right");
+  // }
+
   if (index === 0) {
     userElement.querySelector(".user-card").classList.add("first-card");
   } else if (index % 2 === 1) {
+    userElement.querySelector(".user-card").classList.add("rotate-left");
+  } else {
     userElement.querySelector(".user-card").classList.add("rotate-right");
   }
   // ===============
